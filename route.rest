@@ -1,7 +1,15 @@
-GET http://localhost:27017/subscribers
+GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:27017/subscribers/12
+GET http://localhost:3000/subscribers/125
 
-# cntl alt r 
+###
+
+Post http://localhost:3000/subscribers
+
+Content-Type: application/json
+{
+"name": "Amazing Person",
+"subscribedToChannel": "Bee Boi A's Node JS API"
+}

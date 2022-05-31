@@ -1,18 +1,18 @@
-const { default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
 const subscriberSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
   },
-
-  subscriberToChannel: {
+  subscribedToChannel: {
     type: String,
     required: true,
   },
   subscribeDate: {
-    type: String,
+    type: Date,
     required: true,
+    default: Date.now,
   },
 });
 
